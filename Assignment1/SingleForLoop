@@ -1,0 +1,23 @@
+//Returns the count of even numbers
+public void EvenNumbersCount()
+{
+    int flag=0;
+    int i,n;
+    n=10;
+    for(i=0;i<n;i++)
+    {
+        if(i/2==0)
+        {
+            flag++;
+        }
+    }
+    return flag;
+}
+
+Time Complexity:
+i=0,1 unit,1 Time
+i<n-->i=0,1,2,3,4,5,6,7,8,9,10--->1 unit,11 times--->n+1times
+i++--->0-->1-->2-->3-->4-->5-->6-->7-->8-->9-->10,10 times--->n times
+i/2==0,2 units,i=0,1,2,3,4,5,6,7,8,9-->n times.
+flag++--->1 unit,5 times.
+T(n)=n+n+n+1+n+5+1=4n+7
